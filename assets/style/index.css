@@ -10,43 +10,25 @@
 }
 
 *h2 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 *p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
     background-color: #7395ae;
 }
 
-@media screen and (max-width:600px) {
-   .hero {
-        display:grid;
-        height: 500px;
-        font-size: 12px;
-   } 
-   .hero img {
-        height: 50%;
-        width: 40px;
-   }
-}
 
 .hero {
-    padding-top: 30%;
+    padding-top: 20%;
     margin: auto;
-    height: 500px;
-    width: 70%;
-}
-
-.hero img {
-    width: 160px;
-    padding-left: 50;
+    width: 60%;
 }
 
 .hero .hi {
-    display: flex;
 	border: solid #557A95 3px; 
 	border-top-left-radius: 10px; -webkit-border-top-left-radius: 10px; -moz-border-top-left-radius: 10px; 
 	border-top-right-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-top-right-radius: 10px; 
@@ -60,14 +42,64 @@ body {
 
 .hero .hi h2, p {
     padding-left: 6px;
-    
 }
 
 .hero .hi p {
-    padding-top: 12px;
-
+    padding-top: 20px;
 }
 
-.links {
+.hero .hi .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .hi .links img[alt="anime"] {
+    width: 100px;
+    position: relative;
+    opacity:50%;
+}
+
+.hero .hi .links ul {
+    margin-top: 20px;
+    margin-left: 10px;
     list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.hero .hi .links ul li a img {
+    width: 50px;
+}
+
+
+
+
+@media (max-width:600px) {
+    * {
+        flex-wrap: wrap;
+    }
+    
+    .hero {
+        display: grid;
+        height: 300px;
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .hero .hi .links {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero .hi .links img[alt="anime"] {
+        width: 80px;
+        opacity:50%;
+    }
+
+    .hero .hi .links ul li a img {
+        width: 35px;
+    }
+
 }
